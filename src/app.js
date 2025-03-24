@@ -1,16 +1,16 @@
 window.onload = function () {
-  let pronoun = ['the', 'our', 'you', 'their'];
-  let adj = ['great', 'big', 'beautiful', 'little'];
-  let noun = ['chair', 'car', 'dog', 'sister'];
-  let extension = ['.com', '.net', '.us', '.io'];
+  let pronouns = ['the', 'our', 'you', 'their'];
+  let adjectives = ['great', 'big', 'beautiful', 'little'];
+  let nouns = ['chair', 'car', 'dog', 'sister'];
+  let extensions = ['.com', '.net', '.us', '.io'];
 
   let resultado = ""; 
 
-  for (let p of pronoun) {
-    for (let a of adj) {
-      for (let n of noun) {
-        for (let ext of extension) {
-          let dominio = p + a + n + ext;
+  for (let pronoun of pronouns) {
+    for (let adjective of adjectives) {
+      for (let noun of nouns) {
+        for (let extension of extensions) {
+          let dominio = pronoun + adjective + noun + extension;
           console.log(dominio); 
           resultado += dominio + "<br>"; 
         }
